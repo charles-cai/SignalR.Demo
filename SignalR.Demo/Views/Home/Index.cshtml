@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script type="text/javascript">
+    $(function()
+    {
+        var clock = $.connection.serverClockHub;
+
+        clock.showTime = function(serverTime)
+        {
+            $('#timeOnServer').html(serverTime);
+        };
+
+        $('#timeOnServer').click(function()
+        {
+            clock.send();
+        });
+
+        $.connection.hub.start();
+    });
+</script>
+
+<h2 id="header">Dirt Simple SignalR Demo</h2>
+
+<div id="timeOnServer">If you don't see the clock, click here.</div>
