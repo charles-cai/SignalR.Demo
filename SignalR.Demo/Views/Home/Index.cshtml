@@ -16,7 +16,7 @@
 
         $('#timeOnServer').click(function()
         {
-            clock.send();
+        	clock.getServerTime();
         });
 
         $.connection.hub.start();

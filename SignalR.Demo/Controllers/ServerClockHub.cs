@@ -8,13 +8,13 @@ namespace SignalR.Demo.Controllers
     {
         Timer _timer;
 
-        public void Send()
+        public void GetServerTime()
         {
             if (_timer == null)
             {
                 _timer = new Timer();
                 _timer.Interval = 1000;
-                _timer.Elapsed += (sender, e) => Send();
+				_timer.Elapsed += (sender, e) => GetServerTime();
                 _timer.Start();
             }
 
