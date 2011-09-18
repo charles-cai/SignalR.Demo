@@ -8,5 +8,10 @@ namespace SignalR.Demo.Controllers
         {
             return View();
         }
+
+		public ActionResult ConnectionTest()
+		{
+			return View();
+		}
     }
 }
