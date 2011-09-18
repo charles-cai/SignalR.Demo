@@ -6,3 +6,11 @@ c:\users\bradygaster\dropbox\presentations\SignalR.Demo\SignalR.Demo\bin\EntityF
 c:\users\bradygaster\dropbox\presentations\SignalR.Demo\SignalR.Demo\obj\Debug\ResolveAssemblyReference.cache
 c:\users\bradygaster\dropbox\presentations\SignalR.Demo\SignalR.Demo\obj\Debug\SignalR.Demo.dll
 c:\users\bradygaster\dropbox\presentations\SignalR.Demo\SignalR.Demo\obj\Debug\SignalR.Demo.pdb
+C:\src\SignalR.Demo\SignalR.Demo\bin\SignalR.Demo.dll
+C:\src\SignalR.Demo\SignalR.Demo\bin\SignalR.Demo.pdb
+C:\src\SignalR.Demo\SignalR.Demo\bin\EntityFramework.dll
+C:\src\SignalR.Demo\SignalR.Demo\bin\SignalR.dll
+C:\src\SignalR.Demo\SignalR.Demo\bin\EntityFramework.xml
+C:\src\SignalR.Demo\SignalR.Demo\obj\Debug\ResolveAssemblyReference.cache
+C:\src\SignalR.Demo\SignalR.Demo\obj\Debug\SignalR.Demo.dll
+C:\src\SignalR.Demo\SignalR.Demo\obj\Debug\SignalR.Demo.pdb

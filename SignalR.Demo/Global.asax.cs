@@ -19,7 +19,9 @@ namespace SignalR.Demo
 		public static void RegisterRoutes(RouteCollection routes)
 		{
 			routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-			routes.MapConnection<ServerTimeConnection>("clock", "clock/{*operation}");
+
+			routes.MapConnection<ServerTimeConnection>("clock", "{controller}/clock/{*operation}");
+
 			routes.MapRoute(
 				"Default", // Route name
 				"{controller}/{action}/{id}", // URL with parameters
