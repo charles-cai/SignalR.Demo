@@ -13,5 +13,10 @@ namespace SignalR.Demo.Controllers
 		{
 			return View();
 		}
+
+		public ActionResult Chat()
+		{
+			return View();
+		}
     }
 }

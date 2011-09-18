@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using SignalR.Demo.Aspects;
 
 namespace SignalR.Demo.Controllers
 {
-	[LogExecution]
 	public class ServerTimeConnection : PersistentConnection
 	{
 		public ServerTimeConnection()
