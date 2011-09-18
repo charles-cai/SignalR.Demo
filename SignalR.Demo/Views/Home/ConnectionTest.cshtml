@@ -20,7 +20,9 @@
 
 		$('#clickMe').click(function()
 		{
-			connection.send('test');
+			var data = { first: 'brady', last: 'gaster' };
+
+			connection.send(JSON.stringify(data));
 		});
 	});
 
