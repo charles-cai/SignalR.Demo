@@ -46,7 +46,14 @@ namespace SignalR.Demo.Controllers
 
 		protected override System.Threading.Tasks.Task OnReceivedAsync(string clientId, string data)
 		{
-			return base.OnReceivedAsync(clientId, data);
+			var ser = new JavaScriptSerializer();
+			ser.RegisterConverters(new[] { new DynamicJsonConverter() });
+			dynamic o = ser.Deserialize<dynamic>(data);
+
+			// TODO: do something with the object, obviously that's implied
+
+			string received = string.Format("{0} {1}", o.first, o.last);
+			return Connection.Broadcast(received);
 		}
 
 		public override void ProcessRequest(HttpContext context)

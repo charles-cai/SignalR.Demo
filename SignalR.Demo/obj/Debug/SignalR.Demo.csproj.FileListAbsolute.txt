@@ -1,11 +1,3 @@
-c:\users\bradygaster\dropbox\presentations\SignalR.Demo\SignalR.Demo\bin\SignalR.Demo.dll
-c:\users\bradygaster\dropbox\presentations\SignalR.Demo\SignalR.Demo\bin\SignalR.Demo.pdb
-c:\users\bradygaster\dropbox\presentations\SignalR.Demo\SignalR.Demo\bin\EntityFramework.dll
-c:\users\bradygaster\dropbox\presentations\SignalR.Demo\SignalR.Demo\bin\SignalR.dll
-c:\users\bradygaster\dropbox\presentations\SignalR.Demo\SignalR.Demo\bin\EntityFramework.xml
-c:\users\bradygaster\dropbox\presentations\SignalR.Demo\SignalR.Demo\obj\Debug\ResolveAssemblyReference.cache
-c:\users\bradygaster\dropbox\presentations\SignalR.Demo\SignalR.Demo\obj\Debug\SignalR.Demo.dll
-c:\users\bradygaster\dropbox\presentations\SignalR.Demo\SignalR.Demo\obj\Debug\SignalR.Demo.pdb
 C:\src\SignalR.Demo\SignalR.Demo\bin\SignalR.Demo.dll
 C:\src\SignalR.Demo\SignalR.Demo\bin\SignalR.Demo.pdb
 C:\src\SignalR.Demo\SignalR.Demo\bin\EntityFramework.dll

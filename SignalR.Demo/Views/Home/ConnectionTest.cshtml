@@ -1,10 +1,9 @@
 ﻿@{
-    ViewBag.Title = "ConnectionTest";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewBag.Title = "ConnectionTest";
+	Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<h2>Connection Test</h2>
-
+<h2>
+	Connection Test</h2>
 <script language="javascript" type="text/javascript">
 
 	$(function()
@@ -20,14 +19,22 @@
 
 		$('#clickMe').click(function()
 		{
-			var data = { first: 'brady', last: 'gaster' };
+			var data = { first: $('#firstName').val(), last: $('#lastName').val() };
 
 			connection.send(JSON.stringify(data));
 		});
 	});
 
 </script>
-
+<p>
+	<label for="firstName">First</label>
+	<input type="text" name="firstName" id="firstName" value="doo"/>
+</p>
+<p>
+	<label for="lastName">Last</label>
+	<input type="text" name="lastName" id="lastName" value="dah"/>
+</p>
 <input type="button" id="clickMe" value="Click Me" />
 
-<ul id="messages"></ul>
+<ul id="messages">
+</ul>
