@@ -1,0 +1,79 @@
+﻿@{
+	ViewBag.Title = "Checkin";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="@Url.Content("~/signalr/hubs")" type="text/javascript"></script>
+<script type="text/javascript">
+
+	function startGeoLocator()
+	{
+		navigator.geolocation.getCurrentPosition(onGeoLocationObtained);
+	}
+
+	function onGeoLocationObtained(position)
+	{
+		checkinHub.checkin(
+		{
+			Username: $('#username').val(),
+			Latitude: position.coords.latitude,
+			Longitude: position.coords.longitude
+		});
+	}
+
+	var checkinHub;
+	var map;
+
+	function initialize()
+	{
+		var myLatlng = new google.maps.LatLng(30, -90);
+
+		var myOptions =
+		{
+			zoom: 8,
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			center: myLatlng
+		};
+
+		map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+	}
+
+	$(function()
+	{
+		checkinHub = $.connection.geoCheckinHub;
+
+		checkinHub.showCheckin = function(message)
+		{
+			var myLatlng = new google.maps.LatLng(message.Latitude, message.Longitude);
+
+			var marker = new google.maps.Marker({
+				position: myLatlng,
+				map: map,
+				title: message.Username
+			});
+
+			map.setCenter(myLatlng);
+		};
+
+		$('#checkin').click(function()
+		{
+			if($('#username').val() != '')
+			{
+				startGeoLocator();
+			}
+			else
+			{
+				alert('Please provide a username');
+			}
+		});
+
+		$.connection.hub.start();
+
+		initialize();
+	});
+</script>
+<div>
+	<label style="display: block;">Username</label>
+	<input type="text" id="username" />
+	<button id="checkin">Check In</button>
+</div>
+<div id="map_canvas" style="width: 300px; height: 400px;"></div>

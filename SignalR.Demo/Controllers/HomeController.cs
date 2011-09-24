@@ -17,5 +17,10 @@ namespace SignalR.Demo.Controllers
 		{
 			return View();
 		}
+
+		public ActionResult Checkin()
+		{
+			return View();
+		}
     }
 }
