@@ -25,11 +25,11 @@
 
 	function initialize()
 	{
-		var myLatlng = new google.maps.LatLng(30, -90);
+		var myLatlng = new google.maps.LatLng(30,-40);
 
 		var myOptions =
 		{
-			zoom: 8,
+			zoom: 3,
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
 			center: myLatlng
 		};
@@ -50,8 +50,6 @@
 				map: map,
 				title: message.Username
 			});
-
-			map.setCenter(myLatlng);
 		};
 
 		$('#checkin').click(function()
@@ -76,4 +74,4 @@
 	<input type="text" id="username" />
 	<button id="checkin">Check In</button>
 </div>
-<div id="map_canvas" style="width: 300px; height: 400px;"></div>
+<div id="map_canvas"></div>
