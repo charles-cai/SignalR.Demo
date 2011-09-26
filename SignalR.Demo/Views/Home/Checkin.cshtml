@@ -1,78 +1,19 @@
 ﻿@{
-	ViewBag.Title = "Checkin";
-	Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Checkin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <script src="@Url.Content("~/signalr/hubs")" type="text/javascript"></script>
-<script type="text/javascript">
-
-	function startGeoLocator()
-	{
-		navigator.geolocation.getCurrentPosition(onGeoLocationObtained);
-	}
-
-	function onGeoLocationObtained(position)
-	{
-		checkinHub.checkin(
-		{
-			Username: $('#username').val(),
-			Latitude: position.coords.latitude,
-			Longitude: position.coords.longitude
-		});
-	}
-
-	var checkinHub;
-	var map;
-
-	function initialize()
-	{
-		var myLatlng = new google.maps.LatLng(30,-40);
-
-		var myOptions =
-		{
-			zoom: 3,
-			mapTypeId: google.maps.MapTypeId.ROADMAP,
-			center: myLatlng
-		};
-
-		map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-	}
-
-	$(function()
-	{
-		checkinHub = $.connection.geoCheckinHub;
-
-		checkinHub.showCheckin = function(message)
-		{
-			var myLatlng = new google.maps.LatLng(message.Latitude, message.Longitude);
-
-			var marker = new google.maps.Marker({
-				position: myLatlng,
-				map: map,
-				title: message.Username
-			});
-		};
-
-		$('#checkin').click(function()
-		{
-			if($('#username').val() != '')
-			{
-				startGeoLocator();
-			}
-			else
-			{
-				alert('Please provide a username');
-			}
-		});
-
-		$.connection.hub.start();
-
-		initialize();
-	});
-</script>
+<script src="@Url.Content("~/scripts/checkin-controller.js")" type="text/javascript"></script>
 <div>
-	<label style="display: block;">Username</label>
-	<input type="text" id="username" />
-	<button id="checkin">Check In</button>
-	<span style="text-align: right;"><a target="_blank" href="https://github.com/bradygaster/SignalR.Demo">ForkMe on GitHub</a></span>
+    <label style="display: block;">
+        Username</label>
+    <input type="text" id="username" />
+    <button id="checkin">
+        Check In</button>
 </div>
-<div id="map_canvas"></div>
+<div id="map_canvas">
+</div>
+<a target="_blank" href="https://github.com/bradygaster/SignalR.Demo">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/abad93f42020b733148435e2cd92ce15c542d320/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67"
+        alt="Fork me on GitHub">
+</a>

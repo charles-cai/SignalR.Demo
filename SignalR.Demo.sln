@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.Demo", "SignalR.Demo\SignalR.Demo.csproj", "{A106C48E-1C1F-479C-A6B0-BAA56C385388}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoCheckin.Domain", "GeoCheckin.Domain\GeoCheckin.Domain.csproj", "{1B967D67-AFD6-4BE8-AEA5-7281055ED65F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoCheckin.DataAccess", "GeoCheckin.DataAccess\GeoCheckin.DataAccess.csproj", "{F0313DB6-D089-4F8C-9355-862A14240FBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{A106C48E-1C1F-479C-A6B0-BAA56C385388}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A106C48E-1C1F-479C-A6B0-BAA56C385388}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A106C48E-1C1F-479C-A6B0-BAA56C385388}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B967D67-AFD6-4BE8-AEA5-7281055ED65F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B967D67-AFD6-4BE8-AEA5-7281055ED65F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B967D67-AFD6-4BE8-AEA5-7281055ED65F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B967D67-AFD6-4BE8-AEA5-7281055ED65F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0313DB6-D089-4F8C-9355-862A14240FBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0313DB6-D089-4F8C-9355-862A14240FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0313DB6-D089-4F8C-9355-862A14240FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0313DB6-D089-4F8C-9355-862A14240FBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,6 +6,8 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using SignalR.Demo.Controllers;
 using SignalR.Routing;
+using NHQS;
+using GeoCheckin.DataAccess;
 
 namespace SignalR.Demo
 {
@@ -32,6 +34,8 @@ namespace SignalR.Demo
 
 		protected void Application_Start()
 		{
+            SessionFactoryContainer.Current.Add(new SQLiteSessionFactoryCreator().Create());
+
 			AreaRegistration.RegisterAllAreas();
 			RegisterGlobalFilters(GlobalFilters.Filters);
 			RegisterRoutes(RouteTable.Routes);
