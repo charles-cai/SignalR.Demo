@@ -22,5 +22,15 @@ namespace SignalR.Demo.Controllers
 		{
 			return View();
 		}
+
+        public ActionResult Jasmine()
+        {
+            return View();
+        }
+
+        public ActionResult JasmineCalculator()
+        {
+            return View();
+        }
     }
 }

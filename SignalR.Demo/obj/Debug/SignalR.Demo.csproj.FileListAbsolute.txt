@@ -6,7 +6,6 @@ C:\src\SignalR.Demo\SignalR.Demo\obj\Debug\ResolveAssemblyReference.cache
 C:\src\SignalR.Demo\SignalR.Demo\obj\Debug\SignalR.Demo.dll
 C:\src\SignalR.Demo\SignalR.Demo\obj\Debug\SignalR.Demo.pdb
 C:\src\SignalR.Demo\SignalR.Demo\bin\Microsoft.Web.Infrastructure.dll
-C:\SRC\SignalR.Demo\SignalR.Demo\bin\Microsoft.Web.Infrastructure.xml
 C:\SRC\SignalR.Demo\SignalR.Demo\bin\Castle.Core.dll
 C:\SRC\SignalR.Demo\SignalR.Demo\bin\FluentNHibernate.dll
 C:\SRC\SignalR.Demo\SignalR.Demo\bin\GeoCheckin.DataAccess.dll
@@ -18,3 +17,4 @@ C:\SRC\SignalR.Demo\SignalR.Demo\bin\NHQS.dll
 C:\SRC\SignalR.Demo\SignalR.Demo\bin\System.Data.SQLite.DLL
 C:\SRC\SignalR.Demo\SignalR.Demo\bin\GeoCheckin.DataAccess.pdb
 C:\SRC\SignalR.Demo\SignalR.Demo\bin\GeoCheckin.Domain.pdb
+C:\SRC\SignalR.Demo\SignalR.Demo\bin\SignalR.dll
