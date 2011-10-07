@@ -1,6 +1,5 @@
 C:\src\SignalR.Demo\SignalR.Demo\bin\SignalR.Demo.dll
 C:\src\SignalR.Demo\SignalR.Demo\bin\SignalR.Demo.pdb
-C:\src\SignalR.Demo\SignalR.Demo\bin\EntityFramework.dll
 C:\src\SignalR.Demo\SignalR.Demo\bin\EntityFramework.xml
 C:\src\SignalR.Demo\SignalR.Demo\obj\Debug\ResolveAssemblyReference.cache
 C:\src\SignalR.Demo\SignalR.Demo\obj\Debug\SignalR.Demo.dll
@@ -17,4 +16,5 @@ C:\SRC\SignalR.Demo\SignalR.Demo\bin\NHQS.dll
 C:\SRC\SignalR.Demo\SignalR.Demo\bin\System.Data.SQLite.DLL
 C:\SRC\SignalR.Demo\SignalR.Demo\bin\GeoCheckin.DataAccess.pdb
 C:\SRC\SignalR.Demo\SignalR.Demo\bin\GeoCheckin.Domain.pdb
-C:\SRC\SignalR.Demo\SignalR.Demo\bin\SignalR.dll
+C:\src\SignalR.Demo\SignalR.Demo\bin\EntityFramework.dll
+C:\src\SignalR.Demo\SignalR.Demo\bin\SignalR.dll

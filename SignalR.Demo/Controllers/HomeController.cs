@@ -8,6 +8,11 @@ namespace SignalR.Demo.Controllers
 {
     public class HomeController : Controller
     {
+		public ActionResult Calculator()
+		{
+			return View();
+		}
+
         public ActionResult Index()
         {
             return View();
